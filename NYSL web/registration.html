@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body>
+        <header>
+            <div class="header">
+                <h1 id="tituloPrincipal">Northside Youth Soccer League</h1>
+            </div>
+                <h2 class="tituloPagina">Registration Form</h2>
+                <img src="styles/imagenes/nysl_logo.png" alt="Logo" id="logo" width="100">
+        </header>
+            
+        <div class="row">
+            <div class="column" id="col1">
+                    <nav class="menu">
+                            <ul>
+                                <li class="menuLista">
+                                    <a href="index.html">Home</a>	
+                                </li>
+                                <li class="menuLista">
+                                    <a href="about.html">About NYSL</a>
+                                </li>
+                                <li class="menuLista">
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li class="menuLista">
+                                    <a href="rules.html">Rules</a>
+                                </li>
+                                <li class="menuLista"><a href="game_info.html">Game Info</a></li>
+                                <li class="menuLista"><a href="registration.html">Registration</a></li>
+                            </ul>			
+                    </nav>
+            </div>
+            <div class="column" id="col2">
+                    <section class="seccionFormulario">
+                            <form action="show_data.html" method="GET">
+                    
+                                <table class="tablaFormulario">
+                                    <tr>
+                                        <th><fieldset>
+                                            <label for="firstname">
+                                            Player's First Name:</label></th>
+                                        <td>
+                                            <input type="text" name="firstname" id="firstname">
+                                        </td></fieldset>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                            <label for="lastname">
+                                            Last Name:</label></th>
+                                        <td>
+                                           <input type="text" name="lastname" id="lastname">
+                                            
+                                        </fieldset></td> 
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                        <label for="streetaddress">Street Address:</label></th>
+                                        <td>
+                                            <input type="text" name="streetaddress" id="streetaddress">
+                                            </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                    <label for="city">City:</label>
+                                        </th>
+                                        <td>
+                                          <input type="text" name="city" id="city">
+                                            </fieldset>  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                        <label for="zipcode">Zip Code:</label> 
+                                    </th>
+                                         <td><input type="text" name="zipcode" id="zipcode">
+                                        </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset class="newLine">
+                                        <label for="birthdate">Birth Date (mm/dd/yyyy):</label>
+                                        </th>
+                                        <td>
+                                            <input type="date" name="birthdate" id="birthdate">
+                                            </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <fieldset>
+                                            <label for="gender">Gender:</label>
+                                        </th>
+                                        <td>
+                                            <input type="radio" name="gender" value="male" checked>Male
+                                            <input type="radio" name="gender" value="female">Female
+                                            <input type="radio" name="gender" value="nonbinary">Non-Binary 
+                                            </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                        <label for="grade">Grade:</label>
+                                        </th>
+                                        <td>
+                                            <input type="radio" name="grade" value="preschool" checked>Pre-School
+                                            <input type="radio" name="grade" value="first">1st
+                                            <input type="radio" name="grade" value="second">2nd
+                                            <input type="radio" name="grade" value="third">3rd
+                                            <input type="radio" name="grade" value="fourth">4th
+                                            <input type="radio" name="grade" value="fifth">5th
+                                            </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">
+                                            <fieldset>
+                                    <h3>Which elementary school do you live near?</h3>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <label for="school">Closest School:</label>
+                                        </th>
+                                        <td>
+                                            <select name="school">
+                                        <option value="katzenmaier">AJ Katzenmaier</option>
+                                        <option value="greenbay">Greenbay</option>
+                                        <option value="howard">Howard</option>
+                                        <option value="marjorie">Marjorie P Hart</option>
+                                        <option value="north">North Elementary</option>
+                                        <option value="south">South Elementary</option>
+                                        </select>
+                                        </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2"><fieldset>
+                                    <label for="position"><br><h3>What position(s) do you normally play? (check all that apply)</h3></label>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                     <td colspan="2">
+                                        <input type="checkbox" name="position" value="forward">Forward
+                                        <input type="checkbox" name="position" value="defense">Defense
+                                        <input type="checkbox" name="position" value="midfield">Midfield
+                                        <input type="checkbox" name="position" value="goalkeeper">Goalkeeper
+                                        </fieldset>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                        <br><label for="uniform">Uniform Size:</label>
+                                        </th>
+                                        <td><br><input type="radio" name="uniform" value="ysmall">Youth Small
+                                            <input type="radio" name="uniform" value="ymedium">Youth Medium
+                                            <input type="radio" name="uniform" value="ylarge">Youth Large
+                                            <input type="radio" name="uniform" value="small">Small
+                                            <input type="radio" name="uniform" value="medium">Medium
+                                            <input type="radio" name="uniform" value="large">Large
+                                            <input type="radio" name="uniform" value="extralarge">Extra-Large
+                                            </fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2"><br><h3>Permission to Play</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><br><p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of
+                                the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with
+                                soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities,
+                                I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel
+                                and volunteers,including the facilities used for practices and games, against any claim by or on behalf of
+                                the registrant as a result of the registrant’s participation in the programand/orbeing transported to or from
+                                NYSL sponsored activities,which transportation</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><br><p>By entering your name below, I herebyagree andauthorizethe above.In addition, by signing below, Ialso acknowledge
+                                that I have read the cancellation policy and agree to its terms.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <br><fieldset>
+                                    <label for="parent">
+                                        Parent/Guardian Signature: </label>
+                                        </th>
+                                        <td><br>
+                                           <input type="text" name="parent" id="parent"></fieldset> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><fieldset>
+                                            <label for="date">
+                                            Date:</label>
+                                        </th>
+                                        <td>
+                                            <input type="date" name="date" id="date"></fieldset>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" style="text-align: center">
+                                            <br><input type="submit" name="submit" value="Submit">
+                                        </th>
+                                    </tr> 
+                                </table>
+                            </form>
+                    
+                    
+                        </section>
+                        
+            </div>
+            <div class="column" id="col3">
+                <div class="imagenDerecha" id="imagenDerechaFormulario">
+                </div>
+            </div>
+        </div>
+                <!--<div class="footer">
+                    <p>Footer</p>
+                </div>-->
+</body>
+
+
+       
+</body>
+</html>
